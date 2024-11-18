@@ -1,0 +1,85 @@
+.container {
+  display: grid;
+  gap: 15px;
+
+  padding: 10px;
+  justify-content: center;
+  margin: 20px;
+  background-color: rgba(211, 206, 206, 0.589);
+  border-radius: 5px;
+}
+h2 {
+  text-align: center;
+}
+
+.box {
+
+
+  background-color: #fff;
+  margin: 20px 0;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  
+}
+.title {
+  text-align: center;
+  padding: 5px;
+  border: 1px solid rebeccapurple;
+  border-radius: 5px;
+  background-color: aliceblue;
+  margin-bottom: 5px;
+}
+.main {
+  text-align: center;
+  padding: 5px;
+  border: 1px solid rebeccapurple;
+  border-radius: 5px;
+  background-color: aliceblue;
+  font-size: larger;
+  text-align: justify;
+}
+
+
+.loading {
+  text-align: center;
+  margin: 40px 0;
+  display: none;
+}
+
+.loading.show {
+  display: block;
+}
+
+.loading::after {
+  content: 'Loading...';
+  font-size: 18px;
+  color: #333;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes prixClipFix {
+  0% {
+    clip-path: polygon(50% 50%, 0 0, 0 0, 0 0, 0 0, 0 0);
+  }
+  50% {
+    clip-path: polygon(50% 50%, 0 0, 100% 0, 100% 0, 100% 0, 100% 0);
+  }
+  75%,
+  100% {
+    clip-path: polygon(50% 50%, 0 0, 100% 0, 100% 100%, 100% 100%, 100% 100%);
+  }
+}
+
+#posts-container {
+  max-width: 600px;
+  margin: 0 auto;
+}
